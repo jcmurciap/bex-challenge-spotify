@@ -9,6 +9,11 @@ const App = () => {
   
 	const [token, setToken] = useState("");
 
+	const handleLogout = () => {
+		setToken("");
+		window.localStorage.removeItem("token");
+	} 
+
 	// extract token from url hash and update it.
 	useEffect(() => {
 		const hash = window.location.hash;
@@ -27,13 +32,16 @@ const App = () => {
 	return (
   		<div>
 			<div>
-				<a 
-					href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&response_type=${RESPONSE_TYPE}`}
-					className='btn btn-primary'
-					role="button"
-				>
-					Let's get started
-				</a>
+				{!token ?
+					<a 
+						href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&response_type=${RESPONSE_TYPE}`}
+						className='btn btn-primary'
+						role="button"
+					>
+						Let's get started
+					</a>
+					: <button className='btn btn-danger' onClick={handleLogout}>Logout</button>
+				}
 			</div>
     	</div>
   )
