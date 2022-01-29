@@ -1,0 +1,6 @@
+.image-hover:hover {
+    opacity: 0.85;
+    transform: scale(1.015);
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
