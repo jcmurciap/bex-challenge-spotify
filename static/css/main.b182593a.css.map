@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.b182593a.css","mappings":"AAAA,mBAII,cAAe,CAHf,WAAa,CACb,8BAAuB,CAAvB,sBAAuB,CACvB,8BAEJ","sources":["components/Spotify/home.css"],"sourcesContent":[".image-hover:hover {\n    opacity: 0.85;\n    transform: scale(1.015);\n    transition: all .1s ease-in-out;\n    cursor: pointer;\n}"],"names":[],"sourceRoot":""}

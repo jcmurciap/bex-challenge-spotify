@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bex-challenge-spotify/static/css/main.b182593a.css",
+    "main.js": "/bex-challenge-spotify/static/js/main.3348cb15.js",
+    "static/media/woman.jpg": "/bex-challenge-spotify/static/media/woman.0f4e3c64d13d084d6566.jpg",
+    "static/media/bex.png": "/bex-challenge-spotify/static/media/bex.8d3fd12e8f7919bc13ec.png",
+    "index.html": "/bex-challenge-spotify/index.html",
+    "main.b182593a.css.map": "/bex-challenge-spotify/static/css/main.b182593a.css.map",
+    "main.3348cb15.js.map": "/bex-challenge-spotify/static/js/main.3348cb15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b182593a.css",
+    "static/js/main.3348cb15.js"
+  ]
+}
