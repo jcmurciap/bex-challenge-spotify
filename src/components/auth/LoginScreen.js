@@ -1,8 +1,8 @@
 import React from 'react';
 import woman from "../../images/woman.jpg";
 
-const CLIENT_ID = "4d1e166ef5ec4a6caad3ffd242454083";
-const REDIRECT_URL = "http://localhost:3000/";
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+const REDIRECT_URL = process.env.REACT_APP_URL;
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 
