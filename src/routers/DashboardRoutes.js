@@ -4,6 +4,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import ArtistProfile from '../components/Spotify/ArtistProfile';
 import Artists from '../components/Spotify/Artists';
 import logo from '../images/bex.png';
+import { CategoriesScreen } from '../components/Spotify/CategoriesScreen';
 
 export const DashboardRoutes = () => {
     
@@ -38,7 +39,7 @@ export const DashboardRoutes = () => {
 		}
 
 		setToken(token);
-		// window.location.hash=""
+		window.location.hash=""
 	}, [artists]);
     
     return (
@@ -63,11 +64,17 @@ export const DashboardRoutes = () => {
                         <button type="button" className='btn btn-outline-primary'>Search</button>
                     </Link>
 			    </form>
+				<div className='mx-5 mt-2'>
+					<Link to="categories">
+						<button type="button" className='btn btn-info'>Categories</button>
+					</Link>
+				</div>
     	    </div>
             <div>
                 <Routes>
                     <Route path="artists" element={<Artists artists={artists}/>}/>
                     <Route path="artists/profile/:id" element={<ArtistProfile artists={artists} />}/>
+                    <Route path="/categories" element={<CategoriesScreen token={token}/>}/>
                 </Routes>
             </div>  
         </>
