@@ -63,7 +63,7 @@ export const DashboardRoutes = () => {
 			    		placeholder='   Search...'	
 			    	/>
 			    	<Link to="artists">
-                        <button type="button" className='btn btn-outline-primary' onClick={getArtists}>Search</button>
+                        <button type="button" className='btn btn-outline-primary'>Search</button>
                     </Link>
 			    </form>
 				<div className='mx-5 mt-2'>
